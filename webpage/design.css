@@ -1,0 +1,101 @@
+.calendar-container {
+    width: 350px;
+    margin: 40px auto;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    font-style: italic;
+  }
+  
+  #month-year {
+    font-size: 18px;
+    font-weight: bold;
+   
+  }
+  
+  .calendar-body {
+    padding: 10px;
+    box-shadow: 0 0 15px 5px #d4af37;
+    
+  }
+  
+  .days-of-week {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .days-of-week div {
+    width: 40px;
+    text-align: center;
+    color: black;
+  }
+  
+  #calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .day {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: background-color 10s ease;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .day:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .sunday {
+    background-color:#ffcccc ; /* Red color for Sundays */
+  }
+  
+  .holiday {
+    background-color: #ff5252; /* Light red background for holidays */
+  }
+  
+  #timetable-display {
+    display: none;
+    background-color: #f2c464;
+    border: 0 0 2px 15px solid #6c5ce7;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 1px;
+    width: 400px;
+    box-shadow: 0 0 15px 5px #808000;
+  }
+  
+  #timetable-display h1 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+    font-size: larger;
+    box-shadow: 0 0 15px 5px #dc143c
+  }
+  
+  #timetable-display ul {
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  #timetable-display li {
+    list-style-type: none;
+    margin-bottom: 5px;
+  }

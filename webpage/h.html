@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="w.css"> <!-- Link to your external CSS -->
+    <style>
+        body {
+             /* Light pink background */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .birthday-card {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+        /*background-color: white;*/
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .birthday-card h1 {
+            font-size: 3em;
+            color: #ff66b2;
+            animation: fadeIn 2s ease-in-out;
+            background-color: #0b044a;
+        }
+
+        .birthday-card p {
+            font-size: 1.5em;
+            color: #0b044a;
+            animation: slideIn 3s ease-in-out;
+            background-color: #ff66b2;
+
+        }
+
+        .birthday-images img {
+            width: 100%;
+            max-width: 150px;
+            margin: 10px;
+            border-radius: 100px;
+            animation: bounce 3s infinite;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body style="background-image: url(uva2.jpg);">
+
+    <div class="birthday-card">
+        <h1>Happy Birthday!</h1>
+        <p>Wishing you a day filled with love, laughter, and joy.</p>
+        <div class="birthday-images">
+            <img src="uva1.jpg" alt="Image 1">
+            <img src="uva3.jpg" alt="Image 2">
+            <img src="uva4.jpg" alt="Image 3">
+            <img src="uva5.jpg" alt="Image 4">
+        </div>
+    </div>
+    <audio src="38-Michael-Riepen-Happy-Birthday(chosic.com).mp3" controls loop autoplay ;></audio>
+</body>
+</html>

@@ -1,0 +1,21 @@
+class Vehicle:
+    def __init__(self, mileage, fuel_left, initial_fuel):
+        self.mileage = mileage
+        self.fuel_left = fuel_left
+        self.initial_fuel = initial_fuel
+        self.reserve_fuel = 5
+
+    def identify_distance_that_can_be_travelled(self):
+        if self.fuel_left <= self.reserve_fuel:
+            return 0
+        else:
+            return (self.fuel_left - self.reserve_fuel) * self.mileage
+
+    def identify_distance_travelled(self):
+        return (self.initial_fuel - self.fuel_left) * self.mileage
+
+
+
+car = Vehicle(15, 20,50)  
+print("Distance that can be travelled without using reserve fuel:", car.identify_distance_that_can_be_travelled())
+print("Distance travelled so far:", car.identify_distance_travelled())
